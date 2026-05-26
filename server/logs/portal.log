@@ -1,0 +1,19 @@
+|Portal| 2026-05-25 00:35:16 [..] Loaded.
+|Portal| 2026-05-25 00:35:14 [..] Loading /home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/server/portal/portal.py...
+|Portal| 2026-05-25 00:35:16 [..] Loaded.
+|Portal| 2026-05-25 00:35:16 [..] twistd 24.11.0 (/home/emily/.local/share/pipx/venvs/twisted/bin/python 3.14.4) starting up.
+|Portal| 2026-05-25 00:35:16 [..] reactor class: twisted.internet.epollreactor.EPollReactor.
+|Portal| 2026-05-25 00:35:16 [..] AMP starting on 4006
+|Portal| 2026-05-25 00:35:16 [..] Telnet starting on 4000
+|Portal| 2026-05-25 00:35:16 [..] Websocket starting on 4002
+|Portal| 2026-05-25 00:35:16 [..] Webserver-proxy starting on 4001
+|Portal| 2026-05-25 00:35:17 [..] Portal starting server ... 
+|Portal| 2026-05-25 00:35:20 [..] Portal starting server ... 
+|Portal| 2026-05-25 00:37:04 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38562)
+|Portal| 2026-05-25 00:37:04 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38568)
+|Portal| 2026-05-25 00:37:04 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=56260)
+|Portal| 2026-05-25 00:37:04 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=56276)
+|Portal| 2026-05-25 00:37:04 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38550)
+|Portal| 2026-05-25 00:37:05 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38552)
+|Portal| 2026-05-25 00:52:21 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=50988)
+|Portal| 2026-05-26 18:00:14 [..] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=45648)

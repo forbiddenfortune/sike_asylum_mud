@@ -1,0 +1,651 @@
+2026-05-25 00:35:19 [..] Loaded.
+2026-05-25 00:35:17 [..] Loading /home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/server/server.py...
+2026-05-25 00:35:19 [..] Loaded.
+2026-05-25 00:35:19 [..] twistd 24.11.0 (/home/emily/.local/share/pipx/venvs/twisted/bin/python 3.14.4) starting up.
+2026-05-25 00:35:19 [..] reactor class: twisted.internet.epollreactor.EPollReactor.
+2026-05-25 00:35:19 [..] Webserver starting on 4005
+2026-05-25 00:35:19 [..] Initial setup: Creating objects (Account #1 and Limbo room) ...
+2026-05-25 00:35:19 [SS] Character Created: emryn (Caller: emryn(account 1), IP: None).
+2026-05-25 00:35:19 [..] Initial setup: Running at_initial_setup() hook.
+2026-05-25 00:35:19 [..] Initial setup: Gathering static resources using 'collectstatic'
+None2026-05-25 00:35:19 [..] 0 static files copied to '/home/emily/sike_asylum/server/.static', 207 unmodified.
+2026-05-25 00:35:19 [..] Initial setup complete. Restarting Server once.
+2026-05-25 00:35:19 [..] Evennia Server successfully started.
+2026-05-25 00:35:20 [..] Server disconnected from the portal.
+2026-05-25 00:35:20 [..] Main loop terminated.
+2026-05-25 00:35:20 [..] Server Shut Down.
+2026-05-25 00:35:22 [..] Loaded.
+2026-05-25 00:35:20 [..] Loading /home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/server/server.py...
+2026-05-25 00:35:22 [..] Loaded.
+2026-05-25 00:35:22 [..] twistd 24.11.0 (/home/emily/.local/share/pipx/venvs/twisted/bin/python 3.14.4) starting up.
+2026-05-25 00:35:22 [..] reactor class: twisted.internet.epollreactor.EPollReactor.
+2026-05-25 00:35:22 [..] Webserver starting on 4005
+2026-05-25 00:35:22 [..] Evennia Server successfully restarted in 'reset' mode.
+2026-05-25 00:35:53 [WW] ip_from_request: No valid IP address found in request. Using remote_addr.
+2026-05-25 00:36:04 [WW] ip_from_request: No valid IP address found in request. Using remote_addr.
+2026-05-25 00:36:20 [SS] Authentication Success: emryn(account 1) (IP: 127.0.0.1).
+2026-05-25 00:36:20 [..] Logged in: emryn(account 1) 127.0.0.1 (1 session(s) total)
+2026-05-25 00:50:13 [..] Logged out: emryn(account 1) 127.0.0.1 (0 sessions(s) remaining)
+2026-05-26 19:25:04 [!!] Traceback (most recent call last):
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:04 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:04 [!!]     return super().execute(query, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:04 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:04 [!!] Traceback (most recent call last):
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 452, in save
+2026-05-26 19:25:04 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:04 [!!]     self.save_base(
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:04 [!!]         using=using,
+2026-05-26 19:25:04 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]     ...<2 lines>...
+2026-05-26 19:25:04 [!!]         update_fields=update_fields,
+2026-05-26 19:25:04 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]     ^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:04 [!!]     updated = self._save_table(
+2026-05-26 19:25:04 [!!]         raw,
+2026-05-26 19:25:04 [!!]     ...<4 lines>...
+2026-05-26 19:25:04 [!!]         update_fields,
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:04 [!!]     results = self._do_update(
+2026-05-26 19:25:04 [!!]         base_qs,
+2026-05-26 19:25:04 [!!]     ...<5 lines>...
+2026-05-26 19:25:04 [!!]         returning_fields,
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:04 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:04 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:04 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:04 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:04 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:04 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:04 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:04 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]     ^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:04 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:04 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:04 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:04 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:04 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:04 [!!]     return super().execute(query, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:04 [!!] During handling of the above exception, another exception occurred:
+None2026-05-26 19:25:04 [!!] Traceback (most recent call last):
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:04 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:04 [!!]     return super().execute(query, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:04 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:04 [!!] Traceback (most recent call last):
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/objects.py", line 1304, in move_to
+2026-05-26 19:25:04 [!!]     self.location = destination
+2026-05-26 19:25:04 [!!]     ^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/models.py", line 346, in __location_set
+2026-05-26 19:25:04 [!!]     self.save(update_fields=["db_location"])
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 459, in save
+2026-05-26 19:25:04 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:04 [!!]     self.save_base(
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:04 [!!]         using=using,
+2026-05-26 19:25:04 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]     ...<2 lines>...
+2026-05-26 19:25:04 [!!]         update_fields=update_fields,
+2026-05-26 19:25:04 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]     ^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:04 [!!]     updated = self._save_table(
+2026-05-26 19:25:04 [!!]         raw,
+2026-05-26 19:25:04 [!!]     ...<4 lines>...
+2026-05-26 19:25:04 [!!]         update_fields,
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:04 [!!]     results = self._do_update(
+2026-05-26 19:25:04 [!!]         base_qs,
+2026-05-26 19:25:04 [!!]     ...<5 lines>...
+2026-05-26 19:25:04 [!!]         returning_fields,
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:04 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:04 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:04 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:04 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:04 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:04 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:04 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:04 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:04 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]     )
+2026-05-26 19:25:04 [!!]     ^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:04 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:04 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:04 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:04 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:04 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:04 [!!]     return super().execute(query, params)
+2026-05-26 19:25:04 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:04 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+2026-05-26 19:25:10 [!!] Traceback (most recent call last):
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:10 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:10 [!!]     return super().execute(query, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:10 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:10 [!!] Traceback (most recent call last):
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 452, in save
+2026-05-26 19:25:10 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:10 [!!]     self.save_base(
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:10 [!!]         using=using,
+2026-05-26 19:25:10 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]     ...<2 lines>...
+2026-05-26 19:25:10 [!!]         update_fields=update_fields,
+2026-05-26 19:25:10 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]     ^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:10 [!!]     updated = self._save_table(
+2026-05-26 19:25:10 [!!]         raw,
+2026-05-26 19:25:10 [!!]     ...<4 lines>...
+2026-05-26 19:25:10 [!!]         update_fields,
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:10 [!!]     results = self._do_update(
+2026-05-26 19:25:10 [!!]         base_qs,
+2026-05-26 19:25:10 [!!]     ...<5 lines>...
+2026-05-26 19:25:10 [!!]         returning_fields,
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:10 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:10 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:10 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:10 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:10 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:10 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:10 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:10 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]     ^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:10 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:10 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:10 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:10 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:10 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:10 [!!]     return super().execute(query, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:10 [!!] During handling of the above exception, another exception occurred:
+None2026-05-26 19:25:10 [!!] Traceback (most recent call last):
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:10 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:10 [!!]     return super().execute(query, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:10 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:10 [!!] Traceback (most recent call last):
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/objects.py", line 1304, in move_to
+2026-05-26 19:25:10 [!!]     self.location = destination
+2026-05-26 19:25:10 [!!]     ^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/models.py", line 346, in __location_set
+2026-05-26 19:25:10 [!!]     self.save(update_fields=["db_location"])
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 459, in save
+2026-05-26 19:25:10 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:10 [!!]     self.save_base(
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:10 [!!]         using=using,
+2026-05-26 19:25:10 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]     ...<2 lines>...
+2026-05-26 19:25:10 [!!]         update_fields=update_fields,
+2026-05-26 19:25:10 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]     ^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:10 [!!]     updated = self._save_table(
+2026-05-26 19:25:10 [!!]         raw,
+2026-05-26 19:25:10 [!!]     ...<4 lines>...
+2026-05-26 19:25:10 [!!]         update_fields,
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:10 [!!]     results = self._do_update(
+2026-05-26 19:25:10 [!!]         base_qs,
+2026-05-26 19:25:10 [!!]     ...<5 lines>...
+2026-05-26 19:25:10 [!!]         returning_fields,
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:10 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:10 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:10 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:10 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:10 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:10 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:10 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:10 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:10 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]     )
+2026-05-26 19:25:10 [!!]     ^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:10 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:10 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:10 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:10 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:10 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:10 [!!]     return super().execute(query, params)
+2026-05-26 19:25:10 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:10 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+2026-05-26 19:25:16 [!!] Traceback (most recent call last):
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:16 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:16 [!!]     return super().execute(query, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:16 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:16 [!!] Traceback (most recent call last):
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 452, in save
+2026-05-26 19:25:16 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:16 [!!]     self.save_base(
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:16 [!!]         using=using,
+2026-05-26 19:25:16 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]     ...<2 lines>...
+2026-05-26 19:25:16 [!!]         update_fields=update_fields,
+2026-05-26 19:25:16 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]     ^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:16 [!!]     updated = self._save_table(
+2026-05-26 19:25:16 [!!]         raw,
+2026-05-26 19:25:16 [!!]     ...<4 lines>...
+2026-05-26 19:25:16 [!!]         update_fields,
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:16 [!!]     results = self._do_update(
+2026-05-26 19:25:16 [!!]         base_qs,
+2026-05-26 19:25:16 [!!]     ...<5 lines>...
+2026-05-26 19:25:16 [!!]         returning_fields,
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:16 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:16 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:16 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:16 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:16 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:16 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:16 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:16 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]     ^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:16 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:16 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:16 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:16 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:16 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:16 [!!]     return super().execute(query, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:16 [!!] During handling of the above exception, another exception occurred:
+None2026-05-26 19:25:16 [!!] Traceback (most recent call last):
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:16 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:16 [!!]     return super().execute(query, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:16 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:16 [!!] Traceback (most recent call last):
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/objects.py", line 1304, in move_to
+2026-05-26 19:25:16 [!!]     self.location = destination
+2026-05-26 19:25:16 [!!]     ^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/models.py", line 346, in __location_set
+2026-05-26 19:25:16 [!!]     self.save(update_fields=["db_location"])
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 459, in save
+2026-05-26 19:25:16 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:16 [!!]     self.save_base(
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:16 [!!]         using=using,
+2026-05-26 19:25:16 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]     ...<2 lines>...
+2026-05-26 19:25:16 [!!]         update_fields=update_fields,
+2026-05-26 19:25:16 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]     ^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:16 [!!]     updated = self._save_table(
+2026-05-26 19:25:16 [!!]         raw,
+2026-05-26 19:25:16 [!!]     ...<4 lines>...
+2026-05-26 19:25:16 [!!]         update_fields,
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:16 [!!]     results = self._do_update(
+2026-05-26 19:25:16 [!!]         base_qs,
+2026-05-26 19:25:16 [!!]     ...<5 lines>...
+2026-05-26 19:25:16 [!!]         returning_fields,
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:16 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:16 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:16 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:16 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:16 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:16 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:16 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:16 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:16 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]     )
+2026-05-26 19:25:16 [!!]     ^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:16 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:16 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:16 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:16 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:16 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:16 [!!]     return super().execute(query, params)
+2026-05-26 19:25:16 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:16 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+2026-05-26 19:25:22 [!!] Traceback (most recent call last):
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:22 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:22 [!!]     return super().execute(query, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:22 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:22 [!!] Traceback (most recent call last):
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 452, in save
+2026-05-26 19:25:22 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:22 [!!]     self.save_base(
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:22 [!!]         using=using,
+2026-05-26 19:25:22 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]     ...<2 lines>...
+2026-05-26 19:25:22 [!!]         update_fields=update_fields,
+2026-05-26 19:25:22 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]     ^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:22 [!!]     updated = self._save_table(
+2026-05-26 19:25:22 [!!]         raw,
+2026-05-26 19:25:22 [!!]     ...<4 lines>...
+2026-05-26 19:25:22 [!!]         update_fields,
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:22 [!!]     results = self._do_update(
+2026-05-26 19:25:22 [!!]         base_qs,
+2026-05-26 19:25:22 [!!]     ...<5 lines>...
+2026-05-26 19:25:22 [!!]         returning_fields,
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:22 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:22 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:22 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:22 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:22 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:22 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:22 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:22 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]     ^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:22 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:22 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:22 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:22 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:22 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:22 [!!]     return super().execute(query, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:22 [!!] During handling of the above exception, another exception occurred:
+None2026-05-26 19:25:22 [!!] Traceback (most recent call last):
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:22 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:22 [!!]     return super().execute(query, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!] sqlite3.OperationalError: attempt to write a readonly database
+None2026-05-26 19:25:22 [!!] The above exception was the direct cause of the following exception:
+None2026-05-26 19:25:22 [!!] Traceback (most recent call last):
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/objects.py", line 1304, in move_to
+2026-05-26 19:25:22 [!!]     self.location = destination
+2026-05-26 19:25:22 [!!]     ^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/objects/models.py", line 346, in __location_set
+2026-05-26 19:25:22 [!!]     self.save(update_fields=["db_location"])
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 459, in save
+2026-05-26 19:25:22 [!!]     super().save(*args, **kwargs)
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+2026-05-26 19:25:22 [!!]     self.save_base(
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~~~~~~^
+2026-05-26 19:25:22 [!!]         using=using,
+2026-05-26 19:25:22 [!!]         ^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]     ...<2 lines>...
+2026-05-26 19:25:22 [!!]         update_fields=update_fields,
+2026-05-26 19:25:22 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]     ^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+2026-05-26 19:25:22 [!!]     updated = self._save_table(
+2026-05-26 19:25:22 [!!]         raw,
+2026-05-26 19:25:22 [!!]     ...<4 lines>...
+2026-05-26 19:25:22 [!!]         update_fields,
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+2026-05-26 19:25:22 [!!]     results = self._do_update(
+2026-05-26 19:25:22 [!!]         base_qs,
+2026-05-26 19:25:22 [!!]     ...<5 lines>...
+2026-05-26 19:25:22 [!!]         returning_fields,
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+2026-05-26 19:25:22 [!!]     return filtered._update(values, returning_fields)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+2026-05-26 19:25:22 [!!]     return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+2026-05-26 19:25:22 [!!]     row_count = self.execute_sql(ROW_COUNT)
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+2026-05-26 19:25:22 [!!]     row_count = super().execute_sql(result_type)
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+2026-05-26 19:25:22 [!!]     cursor.execute(sql, params)
+2026-05-26 19:25:22 [!!]     ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+2026-05-26 19:25:22 [!!]     return self._execute_with_wrappers(
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-05-26 19:25:22 [!!]         sql, params, many=False, executor=self._execute
+2026-05-26 19:25:22 [!!]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]     )
+2026-05-26 19:25:22 [!!]     ^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+2026-05-26 19:25:22 [!!]     return executor(sql, params, many, context)
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+2026-05-26 19:25:22 [!!]     with self.db.wrap_database_errors:
+2026-05-26 19:25:22 [!!]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+2026-05-26 19:25:22 [!!]     raise dj_exc_value.with_traceback(traceback) from exc_value
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+2026-05-26 19:25:22 [!!]     return self.cursor.execute(sql, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!]   File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+2026-05-26 19:25:22 [!!]     return super().execute(query, params)
+2026-05-26 19:25:22 [!!]            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+2026-05-26 19:25:22 [!!] django.db.utils.OperationalError: attempt to write a readonly database
+2026-05-26 19:25:22 [!!] Unhandled error in Deferred:
+2026-05-26 19:25:22 [!!] 
+	Traceback (most recent call last):
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/twisted/internet/defer.py", line 216, in maybeDeferred
+	    result = f(*args, **kwargs)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/server/service.py", line 102, in server_maintenance
+	    evennia.ServerConfig.objects.conf("runtime", evennia.gametime.SERVER_RUNTIME)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/server/manager.py", line 48, in conf
+	    conf.value = value  # this will pickle
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/server/models.py", line 102, in __value_set
+	    self.save()
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/evennia/utils/idmapper/models.py", line 452, in save
+	    super().save(*args, **kwargs)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 874, in save
+	    self.save_base(
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 966, in save_base
+	    updated = self._save_table(
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1110, in _save_table
+	    results = self._do_update(
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/base.py", line 1213, in _do_update
+	    return filtered._update(values, returning_fields)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/query.py", line 1327, in _update
+	    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2140, in execute_returning_sql
+	    row_count = self.execute_sql(ROW_COUNT)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 2111, in execute_sql
+	    row_count = super().execute_sql(result_type)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+	    cursor.execute(sql, params)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 79, in execute
+	    return self._execute_with_wrappers(
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+	    return executor(sql, params, many, context)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 100, in _execute
+	    with self.db.wrap_database_errors:
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/utils.py", line 94, in __exit__
+	    raise dj_exc_value.with_traceback(traceback) from exc_value
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/utils.py", line 105, in _execute
+	    return self.cursor.execute(sql, params)
+	  File "/home/emily/.local/share/pipx/venvs/evennia/lib/python3.14/site-packages/django/db/backends/sqlite3/base.py", line 359, in execute
+	    return super().execute(query, params)
+	django.db.utils.OperationalError: attempt to write a readonly database
+	
